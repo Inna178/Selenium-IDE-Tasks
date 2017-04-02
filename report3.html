@@ -1,0 +1,497 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>failed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>214</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>5</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>5</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.53</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.1</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr class="title        status_failed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">waiting_login</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult1">waiting_new_coupon</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult2">waiting_search_coupon</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult3">waitings_no_coupon</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult4">waiting_logout</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">waiting_login.html</a><br/><div>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">assert_login_eshop</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/auth/login</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>css=section#page input[name='email']</td>
+	<td>demo@open-eshop.com</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertValue</td>
+	<td>css=section#page input[name='email']</td>
+	<td>demo@open-eshop.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=section#page input[name='password']</td>
+	<td>demo</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertValue</td>
+	<td>css=section#page input[name='password']</td>
+	<td>demo</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=section#page button[type='submit']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=div.page-header&gt;h1</td>
+	<td>Welcome admin</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">waiting_new_coupon.html</a><br/><div>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">assert_coupon_present_seacrh</td></tr>
+</thead><tbody>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/coupon</td>
+	<td>Timed&nbsp;out&nbsp;after&nbsp;30000ms</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=.glyphicon.glyphicon-th</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=i.glyphicon.glyphicon-pencil</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=h1</td>
+	<td>Create coupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=name</td>
+	<td>coupon178_test2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>id=name</td>
+	<td>coupon178_test2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=name</td>
+	<td>coupon178_test2</td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=td.day.active</td>
+	<td>Timed&nbsp;out&nbsp;after&nbsp;30000ms</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=valid_date</td>
+	<td>2017-03-20</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=td.day.active</td>
+	<td>2017-03-20</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=td.day.active</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>name=valid_date</td>
+	<td>2017-03-20</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=number_coupons</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=number_coupons</td>
+	<td>3</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=number_coupons</td>
+	<td>3</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.btn</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.btn</td>
+	<td>Element&nbsp;css=button.btn&nbsp;not&nbsp;found</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=table.table.table-striped.table-bordered &gt;&nbsp;&nbsp;tbody &gt; tr &gt; td</td>
+	<td>coupon178_test2</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">waiting_search_coupon.html</a><br/><div>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">assert_coupon_present_seacrh</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/coupon</td>
+	<td></td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=.glyphicon.glyphicon-th</td>
+	<td>Element&nbsp;css=.glyphicon.glyphicon-th&nbsp;not&nbsp;found</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=i.glyphicon.glyphicon-tag</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>name=name</td>
+	<td>coupon178_test2</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=input[name="name"]</td>
+	<td>coupon178_test2</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.btn</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=table.table.table-striped.table-bordered &gt;&nbsp;&nbsp;tbody &gt; tr &gt; td</td>
+	<td>coupon178_test2</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">waiting_no_coupon.html</a><br/><div>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">assert_element_not_present</td></tr>
+</thead><tbody>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/coupon</td>
+	<td>Timed&nbsp;out&nbsp;after&nbsp;30000ms</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=.glyphicon.glyphicon-th</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=i.glyphicon.glyphicon-tag</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>name=name</td>
+	<td>coupon178_test2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=input[name="name"]</td>
+	<td>coupon178_test2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.btn</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=table.table.table-striped.table-bordered &gt;&nbsp;&nbsp;tbody &gt; tr &gt; td</td>
+	<td>coupon178_test2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=i.glyphicon.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=.sweet-alert &gt; h2</td>
+	<td>Timed&nbsp;out&nbsp;after&nbsp;30000ms</td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.confirm</td>
+	<td>Element&nbsp;css=button.confirm&nbsp;not&nbsp;found</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>assertNotText</td>
+	<td>css=table.table.table-responsive</td>
+	<td>coupon178_test2</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult4">waiting_logout.html</a><br/><div>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">assert_logout</td></tr>
+</thead><tbody>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/coupon?name=coupon178_test2</td>
+	<td>Timed&nbsp;out&nbsp;after&nbsp;30000ms</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=i.glyphicon.glyphicon-th-large</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=span.caret</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=i.glyphicon.glyphglyphicon.glyphicon-off</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=section#page input[name='password']</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/waiting_login.html
+info: Executing: |open | /oc-panel/auth/login |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |selectWindow | null |  |
+info: Executing: |sendKeys | css=section#page input[name=&apos;email&apos;] | demo@open-eshop.com |
+info: Executing: |assertValue | css=section#page input[name=&apos;email&apos;] | demo@open-eshop.com |
+info: Executing: |type | css=section#page input[name=&apos;password&apos;] | demo |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertValue | css=section#page input[name=&apos;password&apos;] | demo |
+info: Executing: |click | css=section#page button[type=&apos;submit&apos;] |  |
+info: Executing: |waitForText | css=div.page-header&gt;h1 | Welcome admin |
+info: Starting test /selenium-server/tests/waiting_new_coupon.html
+info: Executing: |open | /oc-panel/coupon |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+warn: currentTest.recordFailure: Timed out after 30000ms
+info: Executing: |click | css=.glyphicon.glyphicon-th |  |
+info: Executing: |selectWindow | null |  |
+info: Executing: |click | css=i.glyphicon.glyphicon-pencil |  |
+info: Executing: |waitForElementPresent | css=h1 | Create coupon |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | id=name | coupon178_test2 |
+info: Executing: |sendKeys | id=name | coupon178_test2 |
+info: Executing: |waitForElementPresent | id=name | coupon178_test2 |
+info: Executing: |waitForElementPresent | css=td.day.active | 2017-03-20 |
+warn: currentTest.recordFailure: Timed out after 30000ms
+info: Executing: |type | name=valid_date | 2017-03-20 |
+info: Executing: |waitForElementPresent | css=td.day.active | 2017-03-20 |
+info: Executing: |waitForElementPresent | css=td.day.active |  |
+info: Executing: |selectWindow | null |  |
+info: Executing: |waitForElementPresent | name=valid_date | 2017-03-20 |
+info: Executing: |click | id=number_coupons |  |
+info: Executing: |type | id=number_coupons | 3 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | id=number_coupons | 3 |
+info: Executing: |click | css=button.btn |  |
+info: Executing: |selectWindow | null |  |
+info: Executing: |click | css=button.btn |  |
+error: Element css=button.btn not found
+warn: currentTest.recordFailure: Element css=button.btn not found
+info: Starting test /selenium-server/tests/waiting_search_coupon.html
+info: Executing: |open | /oc-panel/coupon |  |
+info: Executing: |click | css=.glyphicon.glyphicon-th |  |
+error: Element css=.glyphicon.glyphicon-th not found
+warn: currentTest.recordFailure: Element css=.glyphicon.glyphicon-th not found
+info: Starting test /selenium-server/tests/waiting_no_coupon.html
+info: Executing: |open | /oc-panel/coupon |  |
+warn: currentTest.recordFailure: Timed out after 30000ms
+info: Executing: |click | css=.glyphicon.glyphicon-th |  |
+info: Executing: |click | css=i.glyphicon.glyphicon-tag |  |
+info: Executing: |sendKeys | name=name | coupon178_test2 |
+info: Executing: |waitForElementPresent | css=input[name=&quot;name&quot;] | coupon178_test2 |
+info: Executing: |click | css=button.btn |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=table.table.table-striped.table-bordered &gt;  tbody &gt; tr &gt; td | coupon178_test2 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 500 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=i.glyphicon.glyphicon-trash |  |
+info: Executing: |waitForElementPresent | css=.sweet-alert &gt; h2 | Are you sure you want to delete? |
+warn: currentTest.recordFailure: Timed out after 30000ms
+info: Executing: |click | css=button.confirm |  |
+error: Element css=button.confirm not found
+warn: currentTest.recordFailure: Element css=button.confirm not found
+info: Starting test /selenium-server/tests/waiting_logout.html
+info: Executing: |open | /oc-panel/coupon?name=coupon178_test2 |  |
+warn: currentTest.recordFailure: Timed out after 30000ms
+info: Executing: |click | css=i.glyphicon.glyphicon-th-large |  |
+info: Executing: |click | css=span.caret |  |
+info: Executing: |click | css=i.glyphicon.glyphglyphicon.glyphicon-off |  |
+info: Executing: |waitForElementPresent | css=section#page input[name=&apos;password&apos;] |  |
+</pre></body></html>
